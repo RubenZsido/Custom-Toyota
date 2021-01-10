@@ -16,24 +16,13 @@ using System.Windows.Shapes;
 namespace Toyota
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Test.xaml
     /// </summary>
-    /// 
-
-    public partial class MainWindow : Window
+    public partial class Test : UserControl
     {
-        public MainWindow()
+        public Test()
         {
-
             InitializeComponent();
-            
         }
-
-       /* private void Window_Initialized(object sender, EventArgs e)
-        {
-            Router.ParentPanel = asd;
-            asd.Children.Clear();
-            asd.Children.Add(new Test());
-        }*/
     }
 }

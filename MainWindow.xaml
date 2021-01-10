@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Toyota"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Custom Toyota" Height="600" Width="1200" ResizeMode="NoResize" WindowStyle="None" Background="{x:Null}" AllowsTransparency="True">
+    <Grid x:Name="MainGrid">
+        <Rectangle x:Name="Background" Fill="#FF29576B" HorizontalAlignment="Center" Height="421" VerticalAlignment="Top" Width="797" Margin="0,0,-3,0" RadiusY="23.5" RadiusX="23.5"/>
+        <Rectangle x:Name="Top" Fill="#FF41CAC6" HorizontalAlignment="Center" Height="123" VerticalAlignment="Top" Width="797" Margin="3,0,0,0" RadiusY="9" RadiusX="9"/>
+        <Rectangle x:Name="TopBottom" Fill="#FF41CAC6" HorizontalAlignment="Center" Height="83.833" VerticalAlignment="Top" Width="797" Margin="3,39.167,0,0"/>
+        <TextBlock x:Name="Title_Copy" HorizontalAlignment="Center" Height="56.5" Margin="100.5,1.875,98.5,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" Foreground="#FF4873A6" TextDecorations="{x:Null}" FontFamily="Yu Gothic UI Semibold" FontSize="48" TextAlignment="Center"><Run FontFamily="Trueno" Text="Custom "/><Run FontFamily="Trueno" Text="Toyota"/></TextBlock>
+        <TextBlock x:Name="Title" HorizontalAlignment="Center" Height="56.5" Margin="0,0,-2,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" Foreground="White" TextDecorations="{x:Null}" FontFamily="Yu Gothic UI Semibold" FontSize="48" TextAlignment="Center"><Run FontFamily="Trueno" Text="Custom "/><Run FontFamily="Trueno" Text="Toyota"/></TextBlock>
+        <Image x:Name="colorpallette" HorizontalAlignment="Left" Height="468.875" Margin="-486.5,90.125,0,0" VerticalAlignment="Top" Width="423.5" Source="mobile-app-design-analogous-color-scheme.png"/>
+        <Grid x:Name="HybridPanel" HorizontalAlignment="Left" Height="227.167" VerticalAlignment="Top" Width="222.5" Margin="245.333,156.167,0,0">
+            <Rectangle x:Name="option_Copy" Fill="#FF413D62" HorizontalAlignment="Left" Height="224" Margin="-7.5,0,0,0" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="230"/>
+            <Rectangle x:Name="option" Fill="#FF595386" HorizontalAlignment="Left" Height="224" Margin="-7.5,-6.5,0,0" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="230"/>
+            <Button x:Name="Choose1" Content="Choose" HorizontalAlignment="Left" Height="55.667" Margin="7.5,141.833,0,0" VerticalAlignment="Top" Width="200" BorderBrush="{x:Null}" Foreground="#FF3664FF" Background="White" FontFamily="Trueno" Style="{DynamicResource WhiteButtonStyle}"/>
+            <Image HorizontalAlignment="Left" Height="110.741" Margin="7.5,-6.5,0,0" VerticalAlignment="Top" Width="200" Source="asd.png"/>
+            <TextBlock HorizontalAlignment="Left" Height="0" Margin="29.5,130.333,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="3"/>
+            <TextBlock HorizontalAlignment="Left" Height="17.5" Margin="7.5,120.083,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="HYBRIDS &amp; FUEL CELL" FontFamily="Trueno" Foreground="#FF332F4D" TextAlignment="Center"/>
+            <TextBlock HorizontalAlignment="Left" Height="17.5" Margin="7.5,119.333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="HYBRIDS &amp; FUEL CELL" FontFamily="Trueno" Foreground="#FFFEFCF9" TextAlignment="Center"/>
+        </Grid>
+        <Grid x:Name="TruckPanel" HorizontalAlignment="Left" Height="227.167" VerticalAlignment="Top" Width="222.5" Margin="515.333,156.167,0,0">
+            <Rectangle x:Name="option_Copy1" Fill="#FF413D62" HorizontalAlignment="Left" Height="224" Margin="-7.5,0,0,0" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="230"/>
+            <Rectangle x:Name="option1" Fill="#FF595386" HorizontalAlignment="Left" Height="224" Margin="-7.5,-6.5,0,0" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="230"/>
+            <Button x:Name="Choose2" Content="Choose" HorizontalAlignment="Left" Height="55.667" Margin="7.5,141.833,0,0" VerticalAlignment="Top" Width="200" BorderBrush="{x:Null}" Foreground="#FF3664FF" Background="White" FontFamily="Trueno" Style="{DynamicResource WhiteButtonStyle}"/>
+            <Image HorizontalAlignment="Left" Height="110.741" Margin="7.5,-6.5,0,0" VerticalAlignment="Top" Width="200" Source="asd2.png"/>
+            <TextBlock HorizontalAlignment="Left" Height="0" Margin="29.5,130.333,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="3"/>
+            <TextBlock HorizontalAlignment="Left" Height="17.5" Margin="7.5,120.083,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="HYBRIDS &amp; FUEL CELL" FontFamily="Trueno" Foreground="#FF332F4D" TextAlignment="Center"/>
+            <TextBlock HorizontalAlignment="Left" Height="17.5" Margin="7.5,119.333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="HYBRIDS &amp; FUEL CELL" FontFamily="Trueno" Foreground="#FFFEFCF9" TextAlignment="Center"/>
+        </Grid>
     </Grid>
 </Window>
