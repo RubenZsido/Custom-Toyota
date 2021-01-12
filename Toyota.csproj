@@ -55,10 +55,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Router.cs" />
-    <Compile Include="Test.xaml.cs">
-      <DependentUpon>Test.xaml</DependentUpon>
+    <Compile Include="Crossovers.xaml.cs">
+      <DependentUpon>Crossovers.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CrossoversWindow.xaml.cs">
+      <DependentUpon>CrossoversWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PurchasableItem.cs" />
+    <Compile Include="Router.cs" />
+    <Page Include="Button1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Crossovers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CrossoversWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -71,10 +87,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Test.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="WhiteButton.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -117,6 +129,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="asd3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="rav4prime-side.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="car1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="truck1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="croosover 2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

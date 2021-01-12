@@ -5,31 +5,53 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Toyota"
         mc:Ignorable="d"
-        Title="Custom Toyota" Height="600" Width="1200" ResizeMode="NoResize" WindowStyle="None" Background="{x:Null}" AllowsTransparency="True">
+        Title="Custom Toyota" Height="600" Width="1200" ResizeMode="NoResize" Background="{x:Null}">
     <Grid x:Name="MainGrid">
-        <Rectangle x:Name="Background" Fill="#FF29576B" HorizontalAlignment="Center" Height="421" VerticalAlignment="Top" Width="797" Margin="0,0,-3,0" RadiusY="23.5" RadiusX="23.5"/>
-        <Rectangle x:Name="Top" Fill="#FF41CAC6" HorizontalAlignment="Center" Height="123" VerticalAlignment="Top" Width="797" Margin="3,0,0,0" RadiusY="9" RadiusX="9"/>
-        <Rectangle x:Name="TopBottom" Fill="#FF41CAC6" HorizontalAlignment="Center" Height="83.833" VerticalAlignment="Top" Width="797" Margin="3,39.167,0,0"/>
-        <TextBlock x:Name="Title_Copy" HorizontalAlignment="Center" Height="56.5" Margin="100.5,1.875,98.5,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" Foreground="#FF4873A6" TextDecorations="{x:Null}" FontFamily="Yu Gothic UI Semibold" FontSize="48" TextAlignment="Center"><Run FontFamily="Trueno" Text="Custom "/><Run FontFamily="Trueno" Text="Toyota"/></TextBlock>
-        <TextBlock x:Name="Title" HorizontalAlignment="Center" Height="56.5" Margin="0,0,-2,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" Foreground="White" TextDecorations="{x:Null}" FontFamily="Yu Gothic UI Semibold" FontSize="48" TextAlignment="Center"><Run FontFamily="Trueno" Text="Custom "/><Run FontFamily="Trueno" Text="Toyota"/></TextBlock>
-        <Image x:Name="colorpallette" HorizontalAlignment="Left" Height="468.875" Margin="-486.5,90.125,0,0" VerticalAlignment="Top" Width="423.5" Source="mobile-app-design-analogous-color-scheme.png"/>
-        <Grid x:Name="HybridPanel" HorizontalAlignment="Left" Height="227.167" VerticalAlignment="Top" Width="222.5" Margin="245.333,156.167,0,0">
-            <Rectangle x:Name="option_Copy" Fill="#FF413D62" HorizontalAlignment="Left" Height="224" Margin="-7.5,0,0,0" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="230"/>
-            <Rectangle x:Name="option" Fill="#FF595386" HorizontalAlignment="Left" Height="224" Margin="-7.5,-6.5,0,0" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="230"/>
-            <Button x:Name="Choose1" Content="Choose" HorizontalAlignment="Left" Height="55.667" Margin="7.5,141.833,0,0" VerticalAlignment="Top" Width="200" BorderBrush="{x:Null}" Foreground="#FF3664FF" Background="White" FontFamily="Trueno" Style="{DynamicResource WhiteButtonStyle}"/>
-            <Image HorizontalAlignment="Left" Height="110.741" Margin="7.5,-6.5,0,0" VerticalAlignment="Top" Width="200" Source="asd.png"/>
-            <TextBlock HorizontalAlignment="Left" Height="0" Margin="29.5,130.333,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="3"/>
-            <TextBlock HorizontalAlignment="Left" Height="17.5" Margin="7.5,120.083,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="HYBRIDS &amp; FUEL CELL" FontFamily="Trueno" Foreground="#FF332F4D" TextAlignment="Center"/>
-            <TextBlock HorizontalAlignment="Left" Height="17.5" Margin="7.5,119.333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="HYBRIDS &amp; FUEL CELL" FontFamily="Trueno" Foreground="#FFFEFCF9" TextAlignment="Center"/>
+        <Rectangle x:Name="Background" Fill="#FF1A1A1A" HorizontalAlignment="Center" Height="600" VerticalAlignment="Center" Width="1190" Margin="-0.3,0,0,0" RadiusY="23.5" RadiusX="23.5"/>
+        <Rectangle x:Name="Top" Fill="#FF393555" HorizontalAlignment="Center" Height="123" VerticalAlignment="Top" Width="1190" Margin="0" RadiusY="9" RadiusX="9"/>
+        <Rectangle x:Name="TopBottom" Fill="#FF393555" HorizontalAlignment="Center" Height="83.833" VerticalAlignment="Top" Width="1190" Margin="0,39.167,0,0"/>
+        <Grid x:Name="Title1" Margin="0,30,0,0" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <TextBlock x:Name="Title_Copy" HorizontalAlignment="Center" Height="56.5" Margin="0,1.875,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" Foreground="#FF4873A6" TextDecorations="{x:Null}" FontFamily="Yu Gothic UI Semibold" FontSize="48" TextAlignment="Center"><Run FontFamily="Trueno" Text="Custom "/><Run FontFamily="Trueno" Text="Toyota"/></TextBlock>
+            <TextBlock x:Name="Title" HorizontalAlignment="Center" Height="56.5" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" Foreground="White" TextDecorations="{x:Null}" FontFamily="Yu Gothic UI Semibold" FontSize="48" TextAlignment="Center"><Run FontFamily="Trueno" Text="Custom "/><Run FontFamily="Trueno" Text="Toyota"/></TextBlock>
         </Grid>
-        <Grid x:Name="TruckPanel" HorizontalAlignment="Left" Height="227.167" VerticalAlignment="Top" Width="222.5" Margin="515.333,156.167,0,0">
-            <Rectangle x:Name="option_Copy1" Fill="#FF413D62" HorizontalAlignment="Left" Height="224" Margin="-7.5,0,0,0" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="230"/>
-            <Rectangle x:Name="option1" Fill="#FF595386" HorizontalAlignment="Left" Height="224" Margin="-7.5,-6.5,0,0" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="230"/>
-            <Button x:Name="Choose2" Content="Choose" HorizontalAlignment="Left" Height="55.667" Margin="7.5,141.833,0,0" VerticalAlignment="Top" Width="200" BorderBrush="{x:Null}" Foreground="#FF3664FF" Background="White" FontFamily="Trueno" Style="{DynamicResource WhiteButtonStyle}"/>
-            <Image HorizontalAlignment="Left" Height="110.741" Margin="7.5,-6.5,0,0" VerticalAlignment="Top" Width="200" Source="asd2.png"/>
-            <TextBlock HorizontalAlignment="Left" Height="0" Margin="29.5,130.333,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="3"/>
-            <TextBlock HorizontalAlignment="Left" Height="17.5" Margin="7.5,120.083,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="HYBRIDS &amp; FUEL CELL" FontFamily="Trueno" Foreground="#FF332F4D" TextAlignment="Center"/>
-            <TextBlock HorizontalAlignment="Left" Height="17.5" Margin="7.5,119.333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="HYBRIDS &amp; FUEL CELL" FontFamily="Trueno" Foreground="#FFFEFCF9" TextAlignment="Center"/>
-        </Grid>
+        <Viewbox x:Name="Hybrids" HorizontalAlignment="Left" Height="346.333" VerticalAlignment="Top" Width="346.333" Margin="50,180,0,0" Stretch="Fill">
+            <Grid x:Name="HybridPanel" Height="220" Width="220">
+                <Rectangle x:Name="PanelShadow" Fill="#FF413D62" HorizontalAlignment="Left" Height="210" Margin="0" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="220"/>
+                <Rectangle x:Name="Panel" Fill="#FF595386" HorizontalAlignment="Left" Height="210.1" Margin="0,-6.5,0,0" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="220"/>
+                <Button x:Name="ChooseHybrids" Content="Choose" HorizontalAlignment="Center" Height="55.667" Margin="0,82,0,0" VerticalAlignment="Center" Width="200" BorderBrush="{x:Null}" Foreground="#FF3664FF" Background="White" FontFamily="Trueno" Style="{DynamicResource ButtonStyle1}"/>
+                <Grid x:Name="SubTitle" Margin="10,93.833,10,107.917">
+                    <TextBlock x:Name="TitleTop" HorizontalAlignment="Left" Height="17.5" Margin="0,0.75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="HYBRIDS &amp; FUEL CELL" FontFamily="Trueno" Foreground="#FF332F4D" TextAlignment="Center"/>
+                    <TextBlock x:Name="TitleShadow" HorizontalAlignment="Left" Height="17.5" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="HYBRIDS &amp; FUEL CELL" FontFamily="Trueno" Foreground="#FFFEFCF9" TextAlignment="Center" Margin="0,-1.002,0,0"/>
+                </Grid>
+                <Image x:Name="CarPicture" Height="72.462" Width="170.5" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="23,10,26.5,137.538" Source="car1.png" Stretch="UniformToFill"/>
+                <Rectangle Fill="#7FFFFFFF" HorizontalAlignment="Left" Height="15" RadiusY="7.834" RadiusX="7.834" VerticalAlignment="Top" Width="200" Margin="10,0,0,0"/>
+            </Grid>
+        </Viewbox>
+        <Viewbox x:Name="Trucks" HorizontalAlignment="Center" Height="346.333" VerticalAlignment="Top" Width="346.333" Margin="0,180,0,0" Stretch="Fill">
+            <Grid x:Name="Trucks1" Height="220" Width="220">
+                <Rectangle x:Name="PanelShadow1" Fill="#FF413D62" HorizontalAlignment="Left" Height="210" Margin="0" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="220"/>
+                <Rectangle x:Name="Panel1" Fill="#FF595386" HorizontalAlignment="Left" Height="210.1" Margin="0,-6.5,0,0" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="220"/>
+                <Button x:Name="ChooseTrucks" Content="Choose" HorizontalAlignment="Center" Height="55.667" Margin="0,82,0,0" VerticalAlignment="Center" Width="200" BorderBrush="{x:Null}" Foreground="#FF3664FF" Background="White" FontFamily="Trueno" Style="{DynamicResource ButtonStyle1}"/>
+                <Grid x:Name="SubTitle1" Margin="10,93.833,10,107.917">
+                    <TextBlock x:Name="TitleTop1" HorizontalAlignment="Left" Height="17.5" Margin="0,0.75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="TRUCKS" FontFamily="Trueno" Foreground="#FF332F4D" TextAlignment="Center"/>
+                    <TextBlock x:Name="TitleShadow1" HorizontalAlignment="Left" Height="17.5" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="TRUCKS" FontFamily="Trueno" Foreground="#FFFEFCF9" TextAlignment="Center" Margin="0,-1.002,0,0"/>
+                </Grid>
+                <Image x:Name="CarPicture1" Height="72.462" Width="170.5" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="23,10,26.5,137.538" Source="truck1.png" Stretch="UniformToFill"/>
+                <Rectangle Fill="#7FFFFFFF" HorizontalAlignment="Left" Height="15" RadiusY="7.834" RadiusX="7.834" VerticalAlignment="Top" Width="200" Margin="10,0,0,0"/>
+            </Grid>
+        </Viewbox>
+        <Viewbox x:Name="Crossovers" HorizontalAlignment="Right" Height="346.333" VerticalAlignment="Top" Width="346.333" Margin="0,180,50,0" Stretch="Fill">
+            <Grid x:Name="Crossovers1" Height="220" Width="220">
+                <Rectangle x:Name="PanelShadow2" Fill="#FF413D62" HorizontalAlignment="Left" Height="210" Margin="0" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="220"/>
+                <Rectangle x:Name="Panel2" Fill="#FF595386" HorizontalAlignment="Left" Height="210.1" Margin="0,-6.5,0,0" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="220"/>
+                <Button x:Name="ChooseCrossovers" Content="Choose" Click="ChooseCrossovers_Click"  HorizontalAlignment="Center" Height="55.667" Margin="0,82,0,0" VerticalAlignment="Center" Width="200" BorderBrush="{x:Null}" Foreground="#FF3664FF" Background="White" FontFamily="Trueno" Style="{DynamicResource ButtonStyle1}"/>
+                <Grid x:Name="SubTitle2" Margin="10,93.833,10,107.917">
+                    <TextBlock x:Name="TitleTop2" HorizontalAlignment="Left" Height="17.5" Margin="0,0.75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="CROSSOVERS" FontFamily="Trueno" Foreground="#FF332F4D" TextAlignment="Center"/>
+                    <TextBlock x:Name="TitleShadow2" HorizontalAlignment="Left" Height="17.5" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="CROSSOVERS" FontFamily="Trueno" Foreground="#FFFEFCF9" TextAlignment="Center" Margin="0,-1.002,0,0"/>
+                </Grid>
+                <Image x:Name="CarPicture2" Height="72.462" Width="170.5" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="23,10,26.5,137.538" Source="croosover 2.png" Stretch="UniformToFill"/>
+                <Rectangle Fill="#7FFFFFFF" HorizontalAlignment="Left" Height="15" RadiusY="7.834" RadiusX="7.834" VerticalAlignment="Top" Width="200" Margin="10,0,0,0"/>
+            </Grid>
+        </Viewbox>
     </Grid>
 </Window>

@@ -7,7 +7,7 @@
 
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="WhiteButton.xaml"/>
+                <ResourceDictionary Source="Button1.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
 

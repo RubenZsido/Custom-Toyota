@@ -11,5 +11,16 @@ namespace Toyota
     {
         public static StackPanel ParentPanel;
 
+        private static List<PurchasableItem> purchasableItems = new List<PurchasableItem>();
+
+        public static void AddItem(PurchasableItem item)
+        {
+            purchasableItems.Add(item);
+        }
+
+        public static List< PurchasableItem> GetItems()
+        {
+            return purchasableItems;
+        }
     }
 }

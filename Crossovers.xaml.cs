@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Toyota
 {
     /// <summary>
-    /// Interaction logic for Test.xaml
+    /// Interaction logic for Crossovers.xaml
     /// </summary>
-    public partial class Test : UserControl
+    public partial class Crossovers : Window
     {
-        public Test()
+        public Crossovers()
         {
             InitializeComponent();
         }

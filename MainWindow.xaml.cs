@@ -29,11 +29,17 @@ namespace Toyota
             
         }
 
-       /* private void Window_Initialized(object sender, EventArgs e)
+        private void ChooseCrossovers_Click(object sender, RoutedEventArgs e)
         {
-            Router.ParentPanel = asd;
-            asd.Children.Clear();
-            asd.Children.Add(new Test());
-        }*/
+            CrossoversWindow newWindow = new CrossoversWindow();
+            newWindow.ShowDialog();
+        }
+
+        /* private void Window_Initialized(object sender, EventArgs e)
+         {
+             Router.ParentPanel = asd;
+             asd.Children.Clear();
+             asd.Children.Add(new Test());
+         }*/
     }
 }
