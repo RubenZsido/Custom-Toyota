@@ -32,8 +32,25 @@ namespace Toyota
         private void ChooseCrossovers_Click(object sender, RoutedEventArgs e)
         {
             CrossoversWindow newWindow = new CrossoversWindow();
+            this.Close();
+            newWindow.ShowDialog();
+            
+        }
+
+        private void ChooseTrucks_Click(object sender, RoutedEventArgs e)
+        {
+            TrucksWindow newWindow = new TrucksWindow();
+            this.Close();
             newWindow.ShowDialog();
         }
+
+        private void ChooseHybrids_Click(object sender, RoutedEventArgs e)
+        {
+            HybridsWindow newWindow = new HybridsWindow();
+            this.Close();
+            newWindow.ShowDialog();
+        }
+
 
         /* private void Window_Initialized(object sender, EventArgs e)
          {

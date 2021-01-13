@@ -5,8 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Toyota"
         mc:Ignorable="d"
-        Title="CrossoversWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="CrossoversWindow" Height="600" Width="1200" ResizeMode="NoResize" Background="{x:Null}">
+    <Grid x:Name="MainGrid">
+        <Rectangle x:Name="Background" Fill="#FF1A1A1A" HorizontalAlignment="Center" Height="600" VerticalAlignment="Center" Width="1190" Margin="-0.3,0,0,0" RadiusY="23.5" RadiusX="23.5"/>
+        <Rectangle x:Name="Top" Fill="#FF393555" HorizontalAlignment="Center" Height="123" VerticalAlignment="Top" Width="1190" Margin="0" RadiusY="9" RadiusX="9"/>
+        <Rectangle x:Name="TopBottom" Fill="#FF393555" HorizontalAlignment="Center" Height="83.833" VerticalAlignment="Top" Width="1190" Margin="0,39.167,0,0"/>
+        <Grid x:Name="Title1" Margin="0,30,0,0" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <TextBlock x:Name="Title_Copy" HorizontalAlignment="Center" Height="56.5" Margin="0,1.875,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" Foreground="#FF4873A6" TextDecorations="{x:Null}" FontFamily="Trueno" FontSize="48" TextAlignment="Center" FontWeight="Bold" Text="Crossovers"/>
+            <TextBlock x:Name="Title" HorizontalAlignment="Center" Height="56.5" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" Foreground="White" TextDecorations="{x:Null}" FontFamily="Trueno" FontSize="48" TextAlignment="Center" FontWeight="Bold" Text="Crossovers"/>
+        </Grid>
+        <Viewbox x:Name="Cruiser" HorizontalAlignment="Center" Height="346.333" VerticalAlignment="Top" Width="346.333" Margin="499.8,180,0,0" Stretch="Fill">
+            <Grid x:Name="Cruiser1" Height="220" Width="220">
+                <Rectangle x:Name="PanelShadow" Fill="#FF413D62" HorizontalAlignment="Left" Height="210" Margin="0" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="220"/>
+                <Rectangle x:Name="Panel" Fill="#FF595386" HorizontalAlignment="Left" Height="210.1" Margin="0,-6.5,0,0" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="220"/>
+                <Button x:Name="ChooseHybrids" Content="$85 415" HorizontalAlignment="Center" Height="55.667" Margin="0,82,0,0" VerticalAlignment="Center" Width="200" BorderBrush="{x:Null}" Foreground="#FF3664FF" Background="White" FontFamily="Trueno" Style="{DynamicResource ButtonStyle1}" Cursor="Hand" Click="ChooseHybrids_Click"/>
+                <Grid x:Name="SubTitle" Margin="10,93.833,10,107.917">
+                    <TextBlock x:Name="TitleTop" HorizontalAlignment="Left" Height="17.5" Margin="0,0.75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="2021 Land Cruiser" FontFamily="Trueno" Foreground="#FF332F4D" TextAlignment="Center"/>
+                    <TextBlock x:Name="TitleShadow" HorizontalAlignment="Left" TextWrapping="Wrap" Width="200" Text="2021 Land Cruiser" FontFamily="Trueno" Foreground="#FFFEFCF9" TextAlignment="Center" Margin="0,-1.002,0,1.752"/>
+                </Grid>
+                <Image x:Name="CarPicture" Height="72.462" Width="170.5" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="23,10,26.5,137.538" Source="croosover 2.png" Stretch="UniformToFill"/>
+                <Rectangle Fill="#7FFFFFFF" HorizontalAlignment="Left" Height="15" RadiusY="7.834" RadiusX="7.834" VerticalAlignment="Top" Width="200" Margin="10,0,0,0"/>
+                <Grid x:Name="Price" Margin="10,178.833,10,22.917">
+                    <TextBlock x:Name="TitleTop3" HorizontalAlignment="Left" Height="17.5" Margin="0,0.75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="$85 415" FontFamily="Trueno" Foreground="#FF332F4D" TextAlignment="Center"/>
+                    <TextBlock x:Name="TitleShadow3" HorizontalAlignment="Left" TextWrapping="Wrap" Width="200" Text="$85 415" FontFamily="Trueno" Foreground="#FFFEFCF9" TextAlignment="Center" Margin="0,-1.002,0,1.752"/>
+                </Grid>
+            </Grid>
+        </Viewbox>
+        <Viewbox x:Name="HR" HorizontalAlignment="Center" Height="346.333" VerticalAlignment="Top" Width="346.333" Margin="0,180,500,0" Stretch="Fill">
+            <Grid x:Name="HR1" Height="220" Width="220">
+                <Rectangle x:Name="PanelShadow2" Fill="#FF413D62" HorizontalAlignment="Left" Height="210" Margin="0" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="220"/>
+                <Rectangle x:Name="Panel2" Fill="#FF595386" HorizontalAlignment="Left" Height="210.1" Margin="0,-6.5,0,0" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="220"/>
+                <Button x:Name="ChooseCrossovers" Content="Choose"  HorizontalAlignment="Center" Height="55.667" Margin="0,82,0,0" VerticalAlignment="Center" Width="200" BorderBrush="{x:Null}" Foreground="#FF3664FF" Background="White" FontFamily="Trueno" Style="{DynamicResource ButtonStyle1}" Click="ChooseCrossovers_Click"/>
+                <Grid x:Name="SubTitle2" Margin="10,93.833,10,107.917">
+                    <TextBlock x:Name="TitleTop2" HorizontalAlignment="Left" Height="17.5" Margin="0,0.75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="2021 C-HR" FontFamily="Trueno" Foreground="#FF332F4D" TextAlignment="Center"/>
+                    <TextBlock x:Name="TitleShadow2" HorizontalAlignment="Left" Height="17.5" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontFamily="Trueno" Foreground="#FFFEFCF9" TextAlignment="Center" Margin="0,-1.002,0,0" Text="2021 C-HR"/>
+                </Grid>
+                <Image x:Name="CarPicture2" Height="72.462" Width="170.5" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="23,10,26.5,137.538" Source="crossover1.png" Stretch="UniformToFill"/>
+                <Rectangle Fill="#7FFFFFFF" HorizontalAlignment="Left" Height="15" RadiusY="7.834" RadiusX="7.834" VerticalAlignment="Top" Width="200" Margin="10,0,0,0"/>
+                <Grid x:Name="Price_Copy" Margin="10,178.833,10,22.917">
+                    <TextBlock x:Name="TitleTop1" HorizontalAlignment="Left" Height="17.5" Margin="0,0.75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="$21 445" FontFamily="Trueno" Foreground="#FF332F4D" TextAlignment="Center"/>
+                    <TextBlock x:Name="TitleShadow1" HorizontalAlignment="Left" TextWrapping="Wrap" Width="200" Text="$21 445" FontFamily="Trueno" Foreground="#FFFEFCF9" TextAlignment="Center" Margin="0,-1.002,0,1.752"/>
+                </Grid>
+            </Grid>
+        </Viewbox>
     </Grid>
 </Window>

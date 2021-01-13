@@ -54,5 +54,77 @@
             </Setter.Value>
         </Setter>
     </Style>
+    <Style x:Key="AddButton" TargetType="{x:Type Button}">
+        <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+        <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Padding" Value="1"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="200">
+                        <Rectangle x:Name="bottom" Fill="#FF332F4D" HorizontalAlignment="Left" Height="19.667" RadiusY="0" RadiusX="0" VerticalAlignment="Top" Width="200" Margin="0,16.333,0,0"/>
+                        <Rectangle x:Name="middle" Fill="#FF332F4D" HorizontalAlignment="Left" Height="36" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="200" Margin="0,16.333,0,0"/>
+                        <Rectangle x:Name="top" Fill="#FFCDF0FF" HorizontalAlignment="Left" Height="36" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="200"/>
+                        <TextBlock x:Name="TextBottom1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Text="Add to Cart" Foreground="#FF332F4D" Height="30" Width="100" TextAlignment="Center" FontSize="16" Margin="50,6.736,0,0"/>
+                        <TextBlock x:Name="TextTop" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Text="Add to Cart" Foreground="#FFA99EFF" Height="30" Width="100" TextAlignment="Center" FontSize="16" Margin="50,5.4,50,0"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefaulted" Value="true"/>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Fill" TargetName="top" Value="#FFCAC3FF"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="true">
+                            <Setter Property="Margin" TargetName="top" Value="0,5,0,0"/>
+                            <Setter Property="Margin" TargetName="TextBottom1" Value="50,11.736,0,0"/>
+                            <Setter Property="Margin" TargetName="TextTop" Value="50,10.4,50,0"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="false"/>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="FinishedButton" TargetType="{x:Type Button}">
+        <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+        <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Padding" Value="1"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid HorizontalAlignment="Stretch" Height="Auto" VerticalAlignment="Stretch" Width="Auto">
+                        <Rectangle x:Name="bottom" Fill="#FF332F4D" HorizontalAlignment="Stretch" Height="29.417" RadiusY="0" RadiusX="0" VerticalAlignment="Top" Width="Auto" Margin="0,24.429,0,0" RenderTransformOrigin="0.5,0.5"/>
+                        <Rectangle x:Name="middle" Fill="#FF332F4D" HorizontalAlignment="Stretch" Height="53.846" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="Auto" Margin="0,24.429,0,-23.275" RenderTransformOrigin="0.5,0.5"/>
+                        <Rectangle x:Name="top" Fill="#FFCDF0FF" HorizontalAlignment="Stretch" Height="53.846" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="Auto" Margin="0" RenderTransformOrigin="0.5,0.5"/>
+                        <TextBlock x:Name="TextBottom1" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Text="Go To Cart" Foreground="#FF332F4D" Height="68.349" Width="301" TextAlignment="Center" FontSize="48" Margin="165.35,-6.81,169.65,26.129" RenderTransformOrigin="0.5,0.5"/>
+                        <TextBlock x:Name="TextTop" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Text="Go To Cart" Foreground="#FFA99EFF" Height="68.349" Width="301" TextAlignment="Center" FontSize="48" Margin="165.35,-8.333,169.65,27.652" RenderTransformOrigin="0.5,0.5"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefaulted" Value="true"/>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Fill" TargetName="top" Value="#FFCAC3FF"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="true">
+                            <Setter Property="Margin" TargetName="top" Value="0,10,0,0"/>
+                            <Setter Property="Height" TargetName="bottom" Value="14.917"/>
+                            <Setter Property="Margin" TargetName="bottom" Value="0,38.929,0,0"/>
+                            <Setter Property="Padding" TargetName="TextBottom1" Value="0,10,0,0"/>
+                            <Setter Property="Padding" TargetName="TextTop" Value="0,7,0,0"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="false"/>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
 </ResourceDictionary>
