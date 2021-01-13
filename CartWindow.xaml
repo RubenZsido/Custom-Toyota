@@ -1,0 +1,60 @@
+﻿<Window x:Class="Toyota.CartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Toyota"
+        mc:Ignorable="d"
+        Title="CartWindow" Height="598" Width="1200" Loaded="Window_Loaded">
+    <Window.Resources>
+        <Style x:Key="Checkout" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="200">
+                            <Rectangle x:Name="bottom" Fill="#FF332F4D" HorizontalAlignment="Left" Height="19.667" RadiusY="0" RadiusX="0" VerticalAlignment="Top" Width="200" Margin="0,16.333,0,0"/>
+                            <Rectangle x:Name="middle" Fill="#FF332F4D" HorizontalAlignment="Left" Height="36" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="200" Margin="0,16.333,0,0"/>
+                            <Rectangle x:Name="top" Fill="#FFCDF0FF" HorizontalAlignment="Left" Height="36" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="200"/>
+                            <TextBlock x:Name="TextBottom1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Text="Check out" Foreground="#FF332F4D" Height="30" Width="100" TextAlignment="Center" FontSize="16" Margin="50,6.736,0,0"/>
+                            <TextBlock x:Name="TextTop" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Text="Check out" Foreground="#FFA99EFF" Height="30" Width="100" TextAlignment="Center" FontSize="16" Margin="50,5.4,50,0"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDefaulted" Value="true"/>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Fill" TargetName="top" Value="#FFCAC3FF"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Margin" TargetName="top" Value="0,5,0,0"/>
+                                <Setter Property="Margin" TargetName="TextBottom1" Value="50,11.736,0,0"/>
+                                <Setter Property="Margin" TargetName="TextTop" Value="50,10.4,50,0"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid x:Name="MainGrid" Margin="0,0,-2,-4">
+        <Rectangle x:Name="Background" Fill="#FF1A1A1A" HorizontalAlignment="Center" Height="600" VerticalAlignment="Center" Width="1190" Margin="-0.3,0,0,0" RadiusY="23.5" RadiusX="23.5"/>
+        <Rectangle Fill="#FF201E30" HorizontalAlignment="Left" Height="472.625" VerticalAlignment="Top" Width="1191.85" Margin="0,88.375,0,0" RadiusY="33.875" RadiusX="33.875"/>
+        <Rectangle x:Name="Top" Fill="#FF393555" HorizontalAlignment="Center" Height="123" VerticalAlignment="Top" Width="1190" Margin="0" RadiusY="9" RadiusX="9"/>
+        <Rectangle x:Name="TopBottom" Fill="#FF393555" HorizontalAlignment="Center" Height="83.833" VerticalAlignment="Top" Width="1190" Margin="0,39.167,0,0"/>
+        <Grid x:Name="Title1" Margin="0,30,0,0" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <TextBlock x:Name="Title_Copy" HorizontalAlignment="Center" Height="56.5" Margin="0,1.875,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" Foreground="#FF4873A6" TextDecorations="{x:Null}" FontFamily="Yu Gothic UI Semibold" FontSize="48" TextAlignment="Center"><Run FontFamily="Trueno" Text="Custom "/><Run FontFamily="Trueno" Text="Toyota"/></TextBlock>
+            <TextBlock x:Name="Title" HorizontalAlignment="Center" Height="56.5" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" Foreground="White" TextDecorations="{x:Null}" FontFamily="Yu Gothic UI Semibold" FontSize="48" TextAlignment="Center"><Run FontFamily="Trueno" Text="Custom "/><Run FontFamily="Trueno" Text="Toyota"/></TextBlock>
+        </Grid>
+        <ScrollViewer x:Name="Scroll" RenderTransformOrigin="0.5,0.5" Margin="86,146,131,87" HorizontalAlignment="Center" VerticalAlignment="Center" Width="977" Height="338">
+            <TextBlock x:Name="Output" TextWrapping="Wrap" FontSize="22" FontFamily="Trueno" Text="asdasdasddgswdrhSWRH" Foreground="White" Height="1052"/>
+        </ScrollViewer>
+        <Button Click="Button_Click" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="213" Margin="849.85,489.46,0,0" Style="{DynamicResource Checkout}"/>
+    </Grid>
+</Window>

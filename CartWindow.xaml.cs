@@ -15,13 +15,25 @@ using System.Windows.Shapes;
 namespace Toyota
 {
     /// <summary>
-    /// Interaction logic for Crossovers.xaml
+    /// Interaction logic for CartWindow.xaml
     /// </summary>
-    public partial class Crossovers : Window
+    public partial class CartWindow : Window
     {
-        public Crossovers()
+        public CartWindow()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            
+            
+            Output.Text = Router.GetOutput();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

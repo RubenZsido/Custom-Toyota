@@ -18,10 +18,10 @@
             <Grid x:Name="HybridPanel" Height="220" Width="220">
                 <Rectangle x:Name="PanelShadow" Fill="#FF413D62" HorizontalAlignment="Left" Height="210" Margin="0" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="220"/>
                 <Rectangle x:Name="Panel" Fill="#FF595386" HorizontalAlignment="Left" Height="210.1" Margin="0,-6.5,0,0" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="220"/>
-                <Button x:Name="ChooseHybrids" Content="Choose" HorizontalAlignment="Center" Height="55.667" Margin="0,82,0,0" VerticalAlignment="Center" Width="200" BorderBrush="{x:Null}" Foreground="#FF3664FF" Background="White" FontFamily="Trueno" Style="{DynamicResource ButtonStyle1}"/>
+                <Button x:Name="ChooseHybrids" Content="Choose" HorizontalAlignment="Center" Height="55.667" Margin="0,82,0,0" VerticalAlignment="Center" Width="200" BorderBrush="{x:Null}" Foreground="#FF3664FF" Background="White" FontFamily="Trueno" Style="{DynamicResource ButtonStyle1}" Click="ChooseHybrids_Click"/>
                 <Grid x:Name="SubTitle" Margin="10,93.833,10,107.917">
-                    <TextBlock x:Name="TitleTop" HorizontalAlignment="Left" Height="17.5" Margin="0,0.75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="HYBRIDS &amp; FUEL CELL" FontFamily="Trueno" Foreground="#FF332F4D" TextAlignment="Center"/>
-                    <TextBlock x:Name="TitleShadow" HorizontalAlignment="Left" Height="17.5" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="HYBRIDS &amp; FUEL CELL" FontFamily="Trueno" Foreground="#FFFEFCF9" TextAlignment="Center" Margin="0,-1.002,0,0"/>
+                    <TextBlock x:Name="TitleTop" HorizontalAlignment="Left" Height="17.5" Margin="0,0.75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="CARS" FontFamily="Trueno" Foreground="#FF332F4D" TextAlignment="Center"/>
+                    <TextBlock x:Name="TitleShadow" HorizontalAlignment="Left" Height="17.5" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="CARS" FontFamily="Trueno" Foreground="#FFFEFCF9" TextAlignment="Center" Margin="0,-1.002,0,0"/>
                 </Grid>
                 <Image x:Name="CarPicture" Height="72.462" Width="170.5" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="23,10,26.5,137.538" Source="car1.png" Stretch="UniformToFill"/>
                 <Rectangle Fill="#7FFFFFFF" HorizontalAlignment="Left" Height="15" RadiusY="7.834" RadiusX="7.834" VerticalAlignment="Top" Width="200" Margin="10,0,0,0"/>
@@ -31,7 +31,7 @@
             <Grid x:Name="Trucks1" Height="220" Width="220">
                 <Rectangle x:Name="PanelShadow1" Fill="#FF413D62" HorizontalAlignment="Left" Height="210" Margin="0" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="220"/>
                 <Rectangle x:Name="Panel1" Fill="#FF595386" HorizontalAlignment="Left" Height="210.1" Margin="0,-6.5,0,0" RadiusY="23.5" RadiusX="23.5" VerticalAlignment="Top" Width="220"/>
-                <Button x:Name="ChooseTrucks" Content="Choose" HorizontalAlignment="Center" Height="55.667" Margin="0,82,0,0" VerticalAlignment="Center" Width="200" BorderBrush="{x:Null}" Foreground="#FF3664FF" Background="White" FontFamily="Trueno" Style="{DynamicResource ButtonStyle1}"/>
+                <Button x:Name="ChooseTrucks" Content="Choose" HorizontalAlignment="Center" Height="55.667" Margin="0,82,0,0" VerticalAlignment="Center" Width="200" BorderBrush="{x:Null}" Foreground="#FF3664FF" Background="White" FontFamily="Trueno" Style="{DynamicResource ButtonStyle1}" Click="ChooseTrucks_Click"/>
                 <Grid x:Name="SubTitle1" Margin="10,93.833,10,107.917">
                     <TextBlock x:Name="TitleTop1" HorizontalAlignment="Left" Height="17.5" Margin="0,0.75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="TRUCKS" FontFamily="Trueno" Foreground="#FF332F4D" TextAlignment="Center"/>
                     <TextBlock x:Name="TitleShadow1" HorizontalAlignment="Left" Height="17.5" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="TRUCKS" FontFamily="Trueno" Foreground="#FFFEFCF9" TextAlignment="Center" Margin="0,-1.002,0,0"/>

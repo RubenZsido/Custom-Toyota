@@ -15,7 +15,31 @@ namespace Toyota
 
         public static void AddItem(PurchasableItem item)
         {
+            for (int i = 0; i < purchasableItems.Count; i++)
+            {
+                if (purchasableItems[i].name == item.name)
+                {
+                    purchasableItems[i].count++;
+                    break;
+                } 
+            }
             purchasableItems.Add(item);
+        }
+
+        public static string GetOutput()
+        {
+            string output = "";
+            for (int i = 0; i < purchasableItems.Count; i++)
+            {
+                output = output + purchasableItems[i].name + " x " + purchasableItems[i].count + " \t\t\t\t\t\t" + "$" + purchasableItems[i].price * purchasableItems[i].count + "\n\n";
+            }
+            int sum = 0;
+            for (int i = 0; i < purchasableItems.Count; i++)
+            {
+                sum += purchasableItems[i].price * purchasableItems[i].count;
+            }
+            output = output + "-----------------------------------------------------------------------------------------------------\nTotal\t\t\t\t\t$" + sum;
+            return output;
         }
 
         public static List< PurchasableItem> GetItems()

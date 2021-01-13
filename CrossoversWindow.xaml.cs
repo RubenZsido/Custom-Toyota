@@ -23,5 +23,21 @@ namespace Toyota
         {
             InitializeComponent();
         }
+
+        private void ChooseCrossovers_Click(object sender, RoutedEventArgs e)
+        {
+            Router.AddItem(new PurchasableItem("2021 C-HR", 21445));
+            CrossoversEngineWindow newWindow = new CrossoversEngineWindow();
+            this.Close();
+            newWindow.ShowDialog();
+        }
+
+        private void ChooseHybrids_Click(object sender, RoutedEventArgs e)
+        {
+            Router.AddItem(new PurchasableItem("2021 Land Cruiser", 85415));
+            CrossoversEngineWindow newWindow = new CrossoversEngineWindow();
+            this.Close();
+            newWindow.ShowDialog();
+        }
     }
 }

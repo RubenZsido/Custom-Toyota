@@ -55,23 +55,63 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Crossovers.xaml.cs">
-      <DependentUpon>Crossovers.xaml</DependentUpon>
+    <Compile Include="Accessories.xaml.cs">
+      <DependentUpon>Accessories.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CarEngineWindow.xaml.cs">
+      <DependentUpon>CarEngineWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CartWindow.xaml.cs">
+      <DependentUpon>CartWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CrossoversEngineWindow.xaml.cs">
+      <DependentUpon>CrossoversEngineWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="CrossoversWindow.xaml.cs">
       <DependentUpon>CrossoversWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="HybridsWindow.xaml.cs">
+      <DependentUpon>HybridsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page1.xaml.cs">
+      <DependentUpon>Page1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PurchasableItem.cs" />
     <Compile Include="Router.cs" />
+    <Compile Include="TrucksEngineWindow.xaml.cs">
+      <DependentUpon>TrucksEngineWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TrucksWindow.xaml.cs">
+      <DependentUpon>TrucksWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.xaml.cs">
+      <DependentUpon>UserControl1.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Accessories.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Button1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Crossovers.xaml">
+    <Page Include="CarEngineWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CartWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CrossoversEngineWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CrossoversWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HybridsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -87,6 +127,26 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Page1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SCrollTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TrucksEngineWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TrucksWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WhiteButton.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -141,6 +201,66 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="croosover 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="car3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="crossover1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="truck2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="car2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="car-automotive-exterior-engine-turbocharger-toyota.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="engine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="car-nissan-almera-engine-auto-part-toyota.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Enginegood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="AlloyWheelLocks.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="All-Weather Floor Liner Package.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="All-WeatherFloorLiners.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CargoTote.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Carpet Floor Mats.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Emergency Assistance Kit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Four Season Floor MAt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TrailBall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TRD_LoweringSprings.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TRD_OilFilter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UniversalTabletHolder.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SecuritySystem.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
